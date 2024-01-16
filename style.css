@@ -1,10 +1,84 @@
 body{
+  font-family: Gilroy, sans-serif;
+  src: url("/fonts/Gilroy-ExtraBold.otf") format("otf"), url("/fonts/Gilroy-Light.otf") format("otf");
+}
+
+
+.container{
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 8px;
-  font-family: Gilroy, sans-serif;
-  src: url("/fonts/Gilroy-ExtraBold.otf") format("otf"), url("/fonts/Gilroy-Light.otf") format("otf");
+}
+
+/* header */
+
+
+.header{
+  width: 100%;
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* nav */
+
+.nav {
+  font-size: 14px;
+  text-transform: uppercase;
+  
+}
+
+.nav-link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
+
+  color: #333;
+  text-decoration: none;
+
+  transition: color .1s linear;
+}
+
+.nav-link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+
+  background-color: red;
+  opacity: 0;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  transition: opacity .1s linear;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.nav-link:hover:after,
+.nav-link.active:after {
+  opacity: 1;
 }
 
 

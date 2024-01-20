@@ -10,6 +10,8 @@ $(document).ready(function() {
   function toggleSidebar() {
     $('.menu').toggleClass('menu_active');
     $('.content').toggleClass('content_active');
+    $('.intro').toggleClass('intro_active');
+    $('.header-logo').toggleClass('header-logo_active');
   }
 
   $(".menu-btn").on("click tap", function() {

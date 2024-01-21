@@ -1,9 +1,3 @@
-body{
-  /* font-family: Gilroy, sans-serif;
-  src: url("/fonts/Gilroy-ExtraBold.otf") format("otf"), url("/fonts/Gilroy-Light.otf") format("otf"), url("/fonts/garamond_bold.otf") format("otf"), url("/fonts/garamond.otf") format("otf"); */
-  background: url('img/fon1.jpg');
-}
-
 @font-face {
   font-family: Gilroy, sans-serif;
   src: url("/fonts/Gilroy-ExtraBold.otf") format("otf"), url("/fonts/Gilroy-Light.otf") format("otf");
@@ -13,6 +7,37 @@ body{
   src: url("/fonts/garamond_bold.otf") format("otf"), url("/fonts/garamond.otf") format("otf");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  background-color: #0C090A;
+  background: url('img/fon1.jpg');
+  animation: zoom 30s infinite;
+  -webkit-animation: zoom 30s infinite;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+@keyframes zoom {
+  0% {
+    background-size: 100%;
+
+  }
+  50% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
 
 .container{
   width: 100%;

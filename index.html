@@ -6,8 +6,10 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="font-awesome.css">
   <link rel="stylesheet" href="font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/0d51c66e16.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="menu.js"></script>
+  <script type="text/javascript" src="openclose.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -16,13 +18,13 @@
       <div class="header-inner">
         <div class="header-logo">DTDesign</div>
         <div class="menu">
-          <a href="#" class="menu-btn"><img class="menu-button" src="img/menu.png" alt=""></a>
+          <a href="#" class="menu-btn"><img onclick="changeImg(this)" id="img1" class="menu-button" src="img/menu.png" alt=""></a>
           <nav class="menu-list">
             <h1 class="des">DTDesign</h1>
             <h2>Свяжитесь с нами!</h2>
-            <p>79194345742</p>
-            <p>fdfdf@mail.ru</p>
-            <p>184 street</p>
+            <a href="#">79194345742</a>
+            <a href="#">fdfdf@mail.ru</a>
+            <a href="#">184 street</a>
             <h2>Наши соц. сети</h2>
           </nav>
         </div>

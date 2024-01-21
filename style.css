@@ -43,11 +43,11 @@ body{
 
 .header-logo {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   transition: 0.5s;
   text-transform: uppercase;
-  font-family: Garamond, sans-serif;
+  font-family: Gilroy, sans-serif;
 }
 
 /* nav */
@@ -160,7 +160,7 @@ section {
   height: 40px;
   position: absolute;
   left: -65px;
-  top: 40px;
+  top: 41px;
 }
 
 .content {
@@ -171,7 +171,7 @@ section {
   text-transform: uppercase;
 }
 .content_active {
-  transform: translateX(-30%);
+  transform: translateX(-25%);
 }
 
 .header-logo_active{
@@ -221,7 +221,7 @@ section {
 .intro-title:after {
   content: "";
   display: block;
-  width: 60px;
+  width: 160px;
   height: 3px;
   margin: 60px auto;
 
@@ -261,4 +261,32 @@ section {
   background-color: #F0E68C;
   color: #333;
   border: 3px solid #F0E68C;
+}
+
+.move-right{
+  transform: translateX(60px);
+  top: 0;
+}
+
+.menu-list h1{
+  text-transform: uppercase;
+  font-family: Gilroy, sans-serif;
+  font-weight: 400;
+}
+
+
+.menu-list h2{
+  text-transform: uppercase;
+  font-family: Garamond, sans-serif;
+  font-weight: 400;
+}
+
+
+
+.menu-list a{
+  text-transform: uppercase;
+  font-family: Gilroy, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
 }

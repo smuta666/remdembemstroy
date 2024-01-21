@@ -18,8 +18,8 @@ html {
 body {
   background-color: #0C090A;
   background: url('img/fon1.jpg');
-  animation: zoom 30s infinite;
-  -webkit-animation: zoom 30s infinite;
+  animation: zoom 20s infinite;
+  -webkit-animation: zoom 20s infinite;
 
   background-position: center center;
   background-repeat: no-repeat;
